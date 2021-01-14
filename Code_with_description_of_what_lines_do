@@ -1,0 +1,10 @@
+from chempy import Equilibrium #imports equilibrium from chempy package (must be installed via pip first)
+from sympy import symbols #imports sympy library from symbols module
+K1,K2,Kw=symbols('K1 K2 Kw') #Transforms strings into instances of Symbol class.
+e1=Equilibrium({'Cu+':1,'e-':1},{'Cu':1},K1) #Represents an equilibrium reaction
+e2=Equilibrium({'Fe3+':1,'e-':3},{'Fe':1},K2) #represents an equilibrium reaction
+coeff=Equilibrium.eliminate([e1,e2],'e-') #eliminates the electrons from the final reaction 
+coeff
+[4,-5]
+redox=e1*coeff[0]+e2*coeff[1] #combines the 2 equations minus the electrons
+print(redox) #prints the overall reaction
