@@ -1,0 +1,15 @@
+You can use a python IDE such as spyder
+Paste the code into the IDE
+Ensure you have installed chempy via pip 
+Replace the code within the {} on lines 4 and 5 using the format below:
+e1=Equilibrium({'Cu+':1,'e-':1},{'Cu':1},K1) 
+where 'Cu2+' etc. is the symbol for the elements/ions etc.
+and :1 is the stoichiometry in the equation
+The first instance of {} is the reactants and the second instance of {} is the products
+This code works for redox reactions, ensure that both reactions are reduction reactions (e- should be in the reactants section, if the reaction is oxidation switch the reactants and products.)
+eg. of lines 4 and 5 with different redox reaction implemented:
+
+e1 = Equilibrium({'MnO4-': 1, 'H+': 8, 'e-': 5}, {'Mn+2': 1, 'H2O': 4}, K1)
+e2 = Equilibrium({'O2': 1, 'H2O': 2, 'e-': 4}, {'OH-': 4}, K2)
+
+^^^ this example is from the original tutorial listed on pypi.org 
