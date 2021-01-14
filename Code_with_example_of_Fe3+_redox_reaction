@@ -8,4 +8,4 @@ coeff
 [4,-5]
 redox=e1*coeff[0]+e2*coeff[1]
 print(redox)
-#This is an example of the code learned from the website linked in the extended description, however, in order to understand the code more, I changed the reaction that was to be balanced, I chose an Fe3+ and Cu redox reaction as it was simple to check the answer to.
+#This is an example of the code learned from the website linked in the extended README file, however, in order to understand the code more, I changed the reaction that was to be balanced, I chose an Fe3+ and Cu redox reaction as it was simple to check the answer to.
