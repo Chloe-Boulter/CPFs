@@ -8,3 +8,4 @@ coeff
 [4,-5]
 redox=e1*coeff[0]+e2*coeff[1]
 print(redox)
+ 
